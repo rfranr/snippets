@@ -1,11 +1,26 @@
 #/bin/bash
 
 ## usage example:
-#  { cat << EOF
+# $ { cat << EOF
 #	http://myexample.exampe.com/endpoint
 #	EOF
 #  } | ./discover_methods.sh
-
+#  
+#  usage example
+#  
+# $ echo -e "https://bhagavadgita.io/api/v1 \n\
+# https://api.thecatapi.com/v1/categories" | ./discover_methods.sh
+# 
+# https://bhagavadgita.io/api/v1
+# GET 404 Not Found
+# POST 404 Not Found
+# PUT 404 Not Found
+# DELETE 404 Not Found
+# https://api.thecatapi.com/v1/categories
+# GET 200 OK
+# POST 405 Method Not Allowed
+# PUT 405 Method Not Allowed
+# DELETE 405 Method Not Allowed
 
 curl_path='/c/Program\ Files/Git/mingw64/bin/curl.exe'
 
