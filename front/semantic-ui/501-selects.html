@@ -1,0 +1,74 @@
+<html>
+<head>
+  <script src="https://semantic-ui.com/javascript/library/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.2/semantic.min.js"></script>
+  <link rel="stylesheet" type="text/css" class="ui" href="https://semantic-ui.com/dist/semantic.min.css">
+</head>
+<body>
+
+<div id="example">
+  <div class="ui selection search dropdown">
+    <input type="hidden" name="gender">
+    <i class="dropdown icon"></i>
+    <div class="default text">Gender</div>
+    <div class="menu">
+      <div class="item" data-value="1">Male</div>
+      <div class="item" data-value="0">Female</div>
+      <div class="item" data-value="1">Male</div>
+      <div class="item" data-value="0">Female</div>
+      <div class="item" data-value="1">Male</div>
+      <div class="item" data-value="0">Female</div>
+      <div class="item" data-value="1">Male</div>
+      <div class="item" data-value="0">Female</div>
+      <div class="item" data-value="1">Male</div>
+      <div class="item" data-value="0">Female</div>
+      <div class="item" data-value="1">Male</div>
+      <div class="item" data-value="0">Female</div>
+      <div class="item" data-value="1">Male</div>
+      <div class="item" data-value="0">Female</div>
+      <div class="item" data-value="1">Male</div>
+      <div class="item" data-value="0">Female</div>
+      <div class="item" data-value="1">Male</div>
+      <div class="item" data-value="0">Female</div>
+      <div class="item" data-value="1">Male</div>
+      <div class="item" data-value="0">Female</div>
+      <div class="item" data-value="1">Male</div>
+      <div class="item" data-value="0">Female</div>
+      <div class="item" data-value="1">Male</div>
+      <div class="item" data-value="0">Female</div>
+      <div class="item" data-value="1">Male</div>
+      <div class="item" data-value="0">Female</div>
+      <div class="item" data-value="1">Male</div>
+      <div class="item" data-value="0">Female</div>
+      <div class="item" data-value="1">Male</div>
+      <div class="item" data-value="0">Female</div>
+    </div>
+  </div>
+</div>
+
+<div id="dest">
+
+</div>
+
+
+  <script>
+    $().ready(
+        function() {
+          var div = $("#example").html();
+          var dest = $("#dest");
+          var tmp = "";
+            for ( i=0;i<500;i++) {
+              tmp = tmp + $("#example").html();
+            }
+          $("#dest").html(tmp);
+          $('.ui.dropdown').dropdown()
+        }
+      ) 
+
+  </script>
+
+
+
+
+</body>
+</html>
