@@ -1,1 +1,8 @@
-﻿
+﻿  pch.cpp
+  dllmain.cpp
+     Creating library C:\Users\flopez\source\githubrfranr\snippets\dotnet\callCFunctionFrom\Release\DLL1.lib and object C:\Users\flopez\source\githubrfranr\snippets\dotnet\callCFunctionFrom\Release\DLL1.exp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 5 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  DLL1.vcxproj -> C:\Users\flopez\source\githubrfranr\snippets\dotnet\callCFunctionFrom\Release\DLL1.dll
